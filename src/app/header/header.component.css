@@ -1,0 +1,8 @@
+.nav-link {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #0C0404;
+    background-color: white;
+}
