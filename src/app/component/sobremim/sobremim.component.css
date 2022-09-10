@@ -1,0 +1,25 @@
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 4px 8px;
+    padding: 4px 8px;
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 70px;
+    padding-top: 5%
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
