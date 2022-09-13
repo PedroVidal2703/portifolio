@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  name: string = "Matheus";
-  age: number = 30;
-  job = "Programador";
+  pills = [
+    {"pillName": "Sobre Mim"},
+    {"pillName": "Projetos"},
+    {"pillName": "Experiência"},
+    {"pillName": "Formação"}
+  ];
+  activePage: string = "Sobre Mim";
+
+  clickedPill(pill: any){
+    console.log(pill)
+    this.activePage = pill.pillName;
+    console.log(pill)
+  }
 
   constructor() { }
 

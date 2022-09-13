@@ -5,12 +5,35 @@
     padding: 4px 8px;
 }
 
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
 .nav-link:hover {
     color: #0C0404;
     background-color: white;
+    border-radius: 0;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #0C0404;
     background-color: white;
+    border-radius: 0;
+}
+
+.nav-link.active i {
+    display: inline-block;
+}
+
+i {
+    display: none;
+}
+
+u {
+    text-decoration: none;
+}
+
+.nav-link.active u {
+    text-decoration:none;
+    border-bottom:1.5px solid #0C0404;
 }
