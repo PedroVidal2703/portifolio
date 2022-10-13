@@ -8,17 +8,27 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   pills = [
-    {"pillName": "Sobre Mim"},
-    {"pillName": "Projetos"},
-    {"pillName": "Experiência"},
-    {"pillName": "Formação"}
+    {"pillName": "Sobre Mim", "pillId": "about"},
+    {"pillName": "Projetos", "pillId": "projects"},
+    {"pillName": "Stacks", "pillId": "stacks"},
+    {"pillName": "Formação", "pillId": "scholarity"}
   ];
   activePage: string = "Sobre Mim";
 
   clickedPill(pill: any){
-    console.log(pill)
     this.activePage = pill.pillName;
-    console.log(pill)
+    console.log(`scrolling to ${pill.pillId}`);
+    let el = document.getElementById(pill.pillId);
+    console.log(document.getElementById(pill.pillId))
+    // Provavel função assincrona, transformar depois e ver o resultado
+    setTimeout(function () {
+      if(el != null) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+      });
+      }
+ }, 100);
   }
 
   constructor() { }
