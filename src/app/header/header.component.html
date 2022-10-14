@@ -1,8 +1,8 @@
 <div class="container-fluid bg-primary-1 fixed-top">
-    <header class="d-md-flex flex-wrap justify-content-center py-2 mb-1">
+    <header class="d-flex flex-wrap justify-content-center py-2 mb-1">
       
       <ul *ngFor="let pill of pills" class="nav nav-pills">
-        <li class="nav-item" [ngSwitch]="activePage"><a href="#" (click)="clickedPill(pill)" [ngClass]="{active: this.activePage == pill.pillName}" class="nav-link" aria-current="page"><i class="bi bi-chevron-right"></i><u>{{pill.pillName}}</u></a></li>
+        <li class="nav-item" [ngSwitch]="activePage"><button (click)="clickedPill(pill)" [ngClass]="{active: this.activePage == pill.pillId}" class="nav-link" aria-current="page"><i class="bi bi-chevron-right"></i><u>{{pill.pillName}}</u></button></li>
       </ul>
     </header>
   </div>

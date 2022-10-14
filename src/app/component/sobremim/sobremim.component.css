@@ -3,9 +3,10 @@ h1, h2, p {
     color: white;
 }
 
-#main-row {
-    margin-top: 10%;
-    margin-bottom: 10%;
+#about {
+    margin-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #text-col {
